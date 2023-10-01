@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Content-Managers</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <nav class="navbar navbar-default">
+    <div class="container top">
+      <div class="navbar-header">
+        <p class="navbar-brand">ADD POST</p>
+      </div>
+        <ul class="nav navbar-nav navbar-right bar">
+          <!-- 6 -->
+          <li id="home" ><a href="index.html">HOME</a></li>
+          <li id="about"><a href="about.html">POSTS</a></li>
+          <li id="home" ><a href="#">TEXT</a></li>
+          <li id="imagearea"><a class= "nav-item nav-link" href="#">IMAGE</a></li>
+          <li id="imagearea"><a class="nav-item nav-link" href="#imagearea">VIDEOS</a></li>
+        </ul>
+    </div>
+  </nav>
+   
+  <script src="script.js"></script>
+
+  <style>
+    body{
+      background-image: url(content.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+<div class="container"></div>
+ 
+<section id="textarea" class="textContent">  
+
+ <div class="container cont-top">
+
+   <div class="card">
+    <div class="input-section">
+      <b><label class="label-section" for="title">Title:</label></b>
+      <input class="div-section" rows="15" cols="40"  type="text" id="title" placeholder="Title_Name">
+    </div>  
+    <div class="input-section">
+      <b><label class="label-section" for="content">Content:</label></b>
+      <textarea class="div-section content"  cols="190" id="content" placeholder="Enter Content">
+      </textarea>
+    </div>
+    <div class="button-section">
+      <button onclick="submitForm()" >SUBMIT</button>
+    </div>
+  </div>
+</section>
+
+<section id="imagearea">
+
+  <div class="container cont-bottom">
+    
+  <div class="card-bottom">
+    <div class="input-section">
+      <b><label class="label-section" for="image">Image:</label></b>
+      <input type="file" id="image" accept="image/*">
+    </div>
+  </div>
+
+<div class="card-bottom">
+    <div class="input-section">
+      <b><label class="label-section" for="video">Video:</label></b>
+      <input type="file" id="video" accept="video/*">
+    </div>
+  </div>
+  <div class="button-section">
+    <button onclick="submitForm()" >SUBMIT</button>
+  </div>
+</div>
+ 
+  <br>
+  <br>
+  <hr>
+</section>
+
+
+
+  <!-- <div class="w3-green w3-hover-shadow w3-padding-64 w3-center" style="width:70%">
+    <p>Hover over me to display me as a card!</p>
+  </div> -->
+
+  <section >
+  <div class="data-container">
+    <div class="data-section   w3-padding-64 w3-center" style="width:20"   id="dataSection">
+    </div>
+  </div>
+
++
+  </section>
+</body>
+
+</html>
